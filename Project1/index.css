@@ -23,11 +23,6 @@ header {
     flex: 0 0 auto;
 }
 
-#site-title {
-    margin: 0;
-    line-height: 60px;
-}
-
 main {
     padding: 20px;
     flex: 1 0 auto;
@@ -174,4 +169,24 @@ form button {
 .form-block {
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+.table-bold {
+    font-weight: bold;
+}
+
+.table-white {
+    background-color: white;
+}
+
+.table-gold {
+    background-color: gold;
+}
+
+.table-gray {
+    background-color: lightgray;
+}
+
+.table-blue {
+    background-color: skyblue;
 }

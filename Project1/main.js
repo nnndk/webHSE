@@ -1,8 +1,10 @@
 class Movie {
-    constructor(title, director, year) {
+    constructor(title, director, year, isBold, color) {
         this.title = title
         this.director = director
         this.year = year
+        this.isBold = isBold
+        this.color = color
     }
 }
 
@@ -38,10 +40,17 @@ for (let i = 0; i < movieRows.length; i++) {
 let newTitle = document.querySelector("#movie-title")
 let newDirector = document.querySelector("#movie-director")
 let newYear = document.querySelector("#movie-year")
+let isBold = document.querySelector("#movie-bold")
+let color = document.querySelector("#movie-color")
 
 const handleMovieSubmit = (event) => {
     event.preventDefault()
     let row = table.insertRow();
+    row.classList.add(`table-${color.value}`)
+
+    if (isBold.checked) {
+        row.classList.add(`table-bold`)
+    }
 
     let titleCell = row.insertCell();
     titleCell.innerText = newTitle.value
