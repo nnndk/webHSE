@@ -62,4 +62,4 @@ const handleMovieSubmit = (event) => {
 }
 
 const movieForm = document.querySelector("#movie-form")
-movieForm.addEventListener("submit", handleMovieSubmit)
+//movieForm.addEventListener("submit", handleMovieSubmit)
