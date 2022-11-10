@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+nav {
+  background-color: rgb(36, 36, 150);
+  color: white !important;
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 0 0 auto;
+}
+
+h2 {
+  margin: 0;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+main {
+  padding: 20px;
+  flex: 1 0 auto;
+}
+
+main table {
+  min-width: 80%;
+  font-size: 20px;
+  border: 2px solid;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  float: right;
+  margin: auto;
+
+}
+
+table caption {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+th, td {
+  border: 1px solid;
+  padding: 3px;
+}
+
+.table-year {
+  text-align: center;
+}
+
+form {
+  font-size: 20px;
+  align-items: center;
+  width: 260px;
+  float: left;
+}
+
+form input {
+  font-size: 20px;
+  padding: 2px;
+}
+
+form button {
+  font-size: 20px;
+  text-align: end;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-block {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.table-bold {
+  font-weight: bold;
+}
+
+.table-white {
+  background-color: white;
+}
+
+.table-gold {
+  background-color: gold;
+}
+
+.table-gray {
+  background-color: lightgray;
+}
+
+.table-blue {
+  background-color: skyblue;
+}
