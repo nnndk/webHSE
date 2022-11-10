@@ -1,4 +1,4 @@
-import React, { useSyncExternalStore } from 'react';
+import React from 'react';
 import Movie from '../data/Movie';
 
 export const AddMovieForm = (props) => {
