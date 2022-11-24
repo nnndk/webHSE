@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Movies</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h2 id="site-title" style="margin: 0; line-height: 60px;">Movies</h2>
+        </header>
+        <a class="next-page" href="index.html">Part 1</a>
+        <main class="main_index2">
+            <table>
+                <caption>Movies</caption>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Director</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody id="movie-table"></tbody>
+            </table>
+
+            <form id="movie-form" action="index.php" method="post">
+                <div class="form-block">
+                    <label for="title">Title</label><br />
+                    <input type="text" id="movie-title" name="title" /><br />
+                </div>
+                <div class="form-block">
+                    <label for="director">Director</label><br />
+                    <input type="text" id="movie-director" name="director" /><br />
+                </div>
+                <div class="form-block">
+                    <label for="year">Year</label><br />
+                    <input type="number" id="movie-year" name="year" /><br />
+                </div>
+                <div class="form-block">
+                    <label for="bold">Bold?</label>
+                    <input type="checkbox" id="movie-bold" name="bold" /><br />
+                </div>
+                <div class="form-block">
+                    <label for="color">Color:</label><br />
+                    <select name="color" id="movie-color">
+                        <option value="white">White</option>
+                        <option value="gold">Gold</option>
+                        <option value="gray">Gray</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                    <br />
+                </div>
+                <button type="submit">Add</button>
+            </form>
+        </main>
+        <footer>
+            Project for web HSE
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
