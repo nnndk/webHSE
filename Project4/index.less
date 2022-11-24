@@ -1,22 +1,32 @@
+// в первую очередь была изменена вложенность всех блоков
+
+// переменные, содержащие цвета и размеры padding'ов
 @color-header: rgb(250, 209, 131);
 @color-footer: mediumaquamarine;
 @color-card: gainsboro;
 
-@color-form-button: desaturate(@color-header, 20%);
+// функция, уменьшающая насыщенность на 40%
+@color-form-button: desaturate(@color-header, 40%);
 
 @standard-padding: 10px;
+// операция умножения раазмера паддинга из переменной на 2
 @main-padding: @standard-padding * 2;
 
+// миксин с параметром, задающий размер margin и padding
 .margin-padding-style(@value) {
     margin: @value;
 	padding: @value;
 }
 
+// миксин без параметров, глобальный стиль страницы
 .global-style {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
 }
 
+// следующие 4 - миксины с параметрами с попарно одинаковыми названиями
+// первые 2 определяют высоту блока в зависимости от того, header это или footer
+// следующие 2 - настройки flex для компонентов header/footer и main
 .item-height(@item) when (@item = "header") {
     height: 60px;
 }
@@ -33,10 +43,12 @@
     flex: 1 0 auto;
 }
 
+// миксин с параметром
 * {
 	.margin-padding-style(0);
 }
 
+// миксин без параметров
 html,
 body {
     .global-style;
@@ -48,6 +60,8 @@ body {
 	min-height: 100%;
 }
 
+// пример применения переменных
+// миксины с параметрами-названиями
 header {
     background-color: @color-header;
     padding-left: @standard-padding;
