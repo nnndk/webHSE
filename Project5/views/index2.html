@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Movies</title>
+    <link rel="stylesheet" href="../public/stylesheets/index.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="../public/javascripts/main.js"></script>
+    <script>
+        const deleteMovie = async (id) => {
+            await axios
+                .delete(`api/deleteMovie/${id}`)
+        }
+
+        const handleUpdateMovie = async (id) => {
+            await axios
+                .delete(`api/deleteMovie/${id}`)
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h2 id="site-title" style="margin: 0; line-height: 60px;">Movies</h2>
+        </header>
+        <a class="next-page" href="/">Part 1</a>
+        <main class="main_index2">
+            <table>
+                <caption>Movies</caption>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Director</th>
+                        <th>Year</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="movie-table"></tbody>
+            </table>
+
+            <form id="movie-form" method="post">
+                <div class="form-block">
+                    <label>Title</label><br />
+                    <input type="text" id="movie-title" name="title" /><br />
+                </div>
+                <div class="form-block">
+                    <label>Director</label><br />
+                    <input type="text" id="movie-director" name="director" /><br />
+                </div>
+                <div class="form-block">
+                    <label>Year</label><br />
+                    <input type="number" id="movie-year" name="year" /><br />
+                </div>
+                <div class="form-block">
+                    <label>Bold?</label>
+                    <input type="checkbox" id="movie-bold" name="bold" /><br />
+                </div>
+                <div class="form-block">
+                    <label>Color:</label><br />
+                    <select name="color" id="movie-color">
+                        <option value="1">White</option>
+                        <option value="2">Gold</option>
+                        <option value="3">Gray</option>
+                        <option value="4">Blue</option>
+                    </select>
+                    <br />
+                </div>
+                <button type="submit">Add</button>
+            </form>
+        </main>
+        <footer>
+            Project for web HSE
+        </footer>
+    </div>
+</body>
+
+</html>
