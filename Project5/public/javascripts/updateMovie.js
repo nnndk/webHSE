@@ -35,6 +35,8 @@ const handleMovieSubmit = async (event) => {
             isBold: newIsBold.checked,
             color: newColor.value
         })
+
+    window.location = "/index2"
 }
 
 const movieForm = document.querySelector("#movie-form")

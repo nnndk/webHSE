@@ -1,7 +1,7 @@
 const movies = await axios
     .get("api/getAllMovies")
     .then(res => res.data)
-console.log(movies)
+
 let table = document.getElementById("movie-table")
 
 const movieRows = movies.map(movie => `

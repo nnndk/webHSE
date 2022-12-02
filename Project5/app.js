@@ -53,7 +53,7 @@ app.get('/api/getSingleMovie/:id', async (req, res) => {
 
 app.put('/api/updateMovie', async (req, res) => {
     await dbClient.updateMovie(req.body)
-    res.sendFile(path.join(__dirname, 'views/index2.html'))
+    res.redirect("/index2")
 })
 
 app.listen(port, () => {
