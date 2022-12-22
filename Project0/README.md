@@ -1,3 +1,3 @@
-#Project 0
+# Project 0
 
-Task: hoststatic files on the server
+Task: host static files on the server
